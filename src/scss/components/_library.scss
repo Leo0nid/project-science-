@@ -1,0 +1,61 @@
+
+.library__chapter {
+    margin-top: 30px;
+    color: $green;
+    font-size: 32px;
+    border-bottom: 1px solid $green;
+  }
+
+.library__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: 30px 80px;
+    justify-content: center;
+    margin-top: 30px;
+    
+
+}
+.library__book {
+    padding: 15px;
+    border: 1px solid $green;
+    border-radius: 15px;
+ 
+}
+.library__img {
+    width: 170px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+.library__desc {
+    color: black;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.library__more {
+    text-align: center;
+    font-size: 12px;
+    color: $green;
+    margin-bottom: 5px;
+    &:hover {
+        color: #03a87f;
+        cursor: pointer;
+    }
+
+}
+
+.library__download {
+    display: block;
+    text-align: center;
+    background-color: white;
+    font-size: 12px;
+    color: $green;
+    border: 0.5px solid $green ;
+    border-radius: 5px;
+    padding: 2px;
+
+}
+
+.library__download:hover {
+    color: #03a87f;
+
+}

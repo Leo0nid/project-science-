@@ -1,0 +1,140 @@
+.myServices__chapter {
+  color: $green;
+  font-size: 32px;
+  border-bottom: 1px solid $green;
+  margin-top: 30px;
+}
+.myServices__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 640px);
+  gap: 40px 80px;
+  justify-content: center;
+  margin-top: 30px;
+  justify-content: center;
+}
+.myServices__toAdd {
+  font-size: 21px;
+  color: black;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.myServices__text {
+  border: 2px solid $green;
+  border-radius: 10px;
+  resize: none;
+  color: black;
+  background-color: rgb(251, 249, 247);
+  ::placeholder {
+    padding: 3px;
+  }
+}
+.myServices__wrapper-input {
+  display: flex;
+  justify-content: center;
+}
+
+.myServices__text:focus,
+input:focus {
+  outline: none;
+}
+.myServices__submit {
+  border: 1px solid $green;
+  color: black;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 7px;
+  margin-right: 15px;
+}
+.myServices__reset {
+  border: 1px solid $green;
+  color: black;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.myServices__toAdd-status {
+  font-size: 21px;
+  color: black;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.myServices__status {
+  width: 80px;
+  color: rgb(4, 204, 4);
+  margin-right: 27px;
+  text-align: center;
+}
+
+.myServices__status-cancel {
+  width: 80px;
+  color: rgb(212, 16, 16);
+  margin-right: 27px;
+  text-align: center;
+}
+.myServices__cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(251, 249, 247);
+  border: 1px solid $green;
+  padding: 10px 20px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.myServices__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myServices__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  &img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+}
+.myServices__name {
+  display: inline-block;
+  text-align: center;
+  width: 80px;
+  margin-top: 5px;
+  font-size: 12px;
+  color: black;
+  
+}
+.myServices__rating {
+  display: flex;
+  margin-left: 6px;
+  
+}
+.myServices__grade {
+  color: black;
+  font-size: 12px;
+}
+.myServices__star {
+  width: 15px;
+  height: 15px;
+}
+.myServices__message {
+  text-align: start;
+  font-size: 12px;
+  color: black;
+  margin-left: 40px;
+  width: 300px;
+}
+.myServices__open {
+  color: $green;
+  font-size: 14px;
+  &:hover{
+    color: black;
+    cursor: pointer;
+  }
+}

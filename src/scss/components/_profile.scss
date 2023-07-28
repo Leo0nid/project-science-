@@ -1,0 +1,126 @@
+.profile__chapter {
+  color: $green;
+  font-size: 32px;
+  border-bottom: 1px solid $green;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.profile__wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 500px);
+  gap: 30px 30px;
+}
+.profile__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $green;
+  padding: 20px;
+  border-radius: 15px;
+  margin-right: 50px;
+}
+.profile__main-info {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.profile__image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.profile__form {
+  border: 2px solid $green;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.profile__name {
+  width: 410px;
+}
+.profile__name-input {
+  display: block;
+  border: 2px solid $green;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 410px;
+  background-color: rgb(251, 249, 247);
+}
+.profile__interest-text {
+  display: block;
+  border: 2px solid $green;
+  border-radius: 10px;
+  width: 410px;
+  height: 50px;
+  resize: none;
+  color: black;
+  background-color: rgb(251, 249, 247);
+  margin-bottom: 10px;
+  
+}
+.profile__gender {
+  display: block;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.profile__gender-input {
+  margin-left: 5px;
+}
+
+.profile__month {
+  display: block;
+  border: 2px solid $green;
+  border-radius: 10px;
+  width: 410px;
+  padding: 5px;
+  background-color: rgb(251, 249, 247);
+}
+//рейтинг
+
+.rate {
+  margin-left: 15px;
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}

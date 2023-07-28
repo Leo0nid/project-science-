@@ -1,0 +1,135 @@
+.header {
+  background-color: $green;
+  position: relative;
+}
+.header__wrapper {
+  padding: 25px 0;
+  border-radius: 0 0 15px 15px;
+}
+.header__logo {
+  color: white;
+  font-size: 28px;
+  font-weight: 36px;
+}
+.header__phone {
+  display: flex;
+  margin-left: 50px;
+}
+.header__number {
+  margin-left: 5px;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+  column-gap: 25px;
+}
+.nav__link {
+  color: $white;
+  font-family: $font-secondary;
+}
+//анимация
+.nav__link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: $white;
+  transition: 0.4s ease-in-out;
+}
+.nav__link:hover::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: $white;
+}
+
+///профиль
+.header__exit{
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.header__door {
+  width: 40;
+  height: 40px;
+  text-align: center;
+}
+.header__user {
+  width: 40px;
+  height: 40px;
+}
+.nav__menu-wrap {
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  width: 320px;
+  &open-menu {
+    max-height: 400px;
+  }
+}
+
+
+.nav__menu {
+  background: $green;
+  padding: 20px;
+  margin: 3px;
+  border-radius: 15px;
+}
+
+.nav__user {
+  display: flex;
+  align-items: center;
+}
+
+
+.nav__user-names {
+  align-items: center;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.nav__user-star {
+  margin-left: 5px;
+  max-width: 20px;
+  max-height: 20px;
+}
+.nav__user-review {
+  display: inline-block;
+  color: white;
+  font-size: 16px;  
+}
+.nav__user-average {
+  display: inline-block;
+  color: white;
+  font-size: 16px;  
+}
+
+.nav__user img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.nav__menu-link {
+  display: flex;
+  justify-content: center;
+  margin: 12px 0;
+  color: $white;
+}
+.nav__menu-link p {
+  width: 100%;
+}
+.nav__menu-link img {
+  width: 25px;
+  margin-right: 15px;
+}
+.nav__menu-link:hover span {
+  transform: translate(5px);
+}
+.nav__menu-link:hover p {
+  font-weight: 600;
+}
